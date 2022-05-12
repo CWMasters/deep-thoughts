@@ -8,6 +8,7 @@ import { QUERY_THOUGHT } from '../utils/queries';
 
 const SingleThought = (props) => {
   const { id: thoughtId } = useParams();
+  console.log(thoughtId);
 
   const { loading, data } = useQuery(QUERY_THOUGHT, {
     variables: { id: thoughtId },
