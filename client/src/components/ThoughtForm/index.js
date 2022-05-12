@@ -45,6 +45,7 @@ const ThoughtForm = () => {
     event.preventDefault();
 
     try {
+      // add thought to database
       await addThought({
         variables: { thoughtText },
       });
